@@ -1,6 +1,5 @@
-<?php namespace Parent;
+<?php namespace ParentTheme;
 
-use Parent\Asset;
 use Timber\Timber;
 use Timber\Menu;
 use Timber\Site;

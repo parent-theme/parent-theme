@@ -1,6 +1,4 @@
-<?php namespace Parent;
-
-use Parent\Theme;
+<?php namespace ParentTheme;
 
 /**
  * Class Asset
