@@ -1,0 +1,6 @@
+<div class="footer-container container">
+  <div class="site-info">&copy; Copyright {{ now|date('Y') }}</div>
+  <div class="footer-menu">
+    {% include "menu.twig" with {"menu": menu.footer} only %}
+  </div>
+</div>

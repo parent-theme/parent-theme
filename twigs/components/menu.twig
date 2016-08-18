@@ -1,0 +1,5 @@
+<ul id="{{ menu.name }}-menu" class="menu">
+	{% for item in menu.get_items %}
+		{% include "menu-item.twig" with {'item': item} %}
+	{% endfor %}
+</ul>

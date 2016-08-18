@@ -1,0 +1,26 @@
+{% block html_head_container %}
+
+{% include 'html-header.twig' %}
+	{% block head %}
+	{% endblock %}
+	</head>
+{% endblock %}
+
+	<body class="{{body_class}}" data-template="base.twig">
+		<div class="page-wrapper">
+			{% include 'header.twig' %}
+			<section role="main" class="content-wrapper">
+				<div class="wrapper {{sidebar_class}}">
+					{% block content %}
+					{% endblock %}
+				</div>
+			</section>
+		</div>
+		{% block footer %}
+			<footer id="footer" class="footer">
+				{% include 'footer.twig' %}
+			</footer>
+			{{ wp_footer }}
+		{% endblock %}
+	</body>
+</html>

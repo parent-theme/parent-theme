@@ -1,0 +1,20 @@
+{
+    "name": "parent-theme/parent-theme",
+    "description": "A WordPress parent theme",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Logan Yott",
+            "email": "loganyott@gmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "ParentTheme\\": "src/"
+      }
+    },
+    "require": {
+        "composer/installers": "^1.1",
+        "timber/timber": "^1.1"
+    }
+}

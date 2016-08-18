@@ -1,0 +1,17 @@
+<header class="header">
+{% block header %}
+	<div class="header-container container">
+		{% include "logo.twig" %}
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="fa fa-bars">Toggle navigation</span>
+		</button>
+		<div class="branding-bottom clearfix">
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-main-navigation-container">
+					{% include "menu.twig" with {'menu': menu.primary} only %}
+				</div>
+			</nav><!-- #nav -->
+		</div>
+	</div>
+{% endblock %}
+</header>

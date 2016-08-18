@@ -1,0 +1,7 @@
+<li class="menu-item {{ item.classes|join(' ') }} {{ item.get_children ? 'has-submenu' }}">
+    <a href="{{ item.get_link }}">{{ item.title }}</a>
+    {% if item.get_children %}
+        <span class="fa fa-caret-down caret"></span>
+        {% include "menu-sub.twig" with {'items': item.get_children} %}
+    {% endif %}
+</li>

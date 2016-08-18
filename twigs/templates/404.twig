@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="content-wrapper">
+		<article class="post-type-404">
+			<section class="article-content">
+				{% block feature %}
+					<div class="feature">
+						<div class="page-title-wrap">
+							<div class="page-title-container container">
+								<h1 class="page-title">Page Not Found</h1>
+							</div>
+						</div>
+					</div>
+				{% endblock %}
+				<div id="content">
+					{% block content_container %}
+						<div class="content-container container">
+							<div class="content-area with-background">
+								Oops! Wrong way. Let's try another route.
+								<br /><br />
+								<div class="centered-button">
+									<a href="/" class="button">Return to the Home Page</a>
+								</div>
+							</div>
+						</div>
+					{% endblock %}
+				</div>
+			</section>
+		</article>
+	</div><!-- /content-wrapper -->
+{% endblock %}
